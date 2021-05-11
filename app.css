@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --clr-neutral-100: hsl(0, 0%, 95%);
+  --clr-primary-200: hsla(0, 0%, 100%, 0.75);
+  --clr-primary-400: hsl(31, 77%, 52%);
+  --clr-primary-600: hsl(184, 100%, 22%);
+  --clr-primary-900: hsl(179, 100%, 13%);
+  --ff-primary: "Big Shoulders Display", cursive;
+  --ff-accent: "Lexend Deca", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 1.3125rem;
+  padding: 2.5em 0;
+  line-height: 1.6;
+  background-color: var(--clr-neutral-100);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-primary);
+  line-height: 1;
+  font-weight: 700;
+  color: var(--clr-neutral-100);
+}
+
+/** New */
+
+.main {
+  width: 90%;
+  max-width: 50em;
+  border-radius: 3em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.cars {
+  padding: 2em;
+}
+
+img {
+  width: 100%;
+}
+
+.icon {
+  width: 5em;
+  margin-bottom: 2em;
+}
+
+/* .info {
+  align-self: center;
+} */
+
+.info h1 {
+  color: var(--clr-neutral-100);
+  font-size: 3rem;
+  margin-bottom: 0.8em;
+}
+
+p {
+  color: var(--clr-primary-200);
+  font-family: var(--ff-accent);
+  font-size: 1.2rem;
+  margin-bottom: 3em;
+}
+
+.cars-sedan {
+  background-color: var(--clr-primary-400);
+}
+
+.cars-suvs {
+  background-color: var(--clr-primary-600);
+}
+
+.cars-luxury {
+  background-color: var(--clr-primary-900);
+}
+
+button {
+  font-family: var(--ff-accent);
+  font-size: 1.1rem;
+  border: 1px solid var(--clr-neutral-100);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 1em 1.5em;
+  border-radius: 1.6em;
+}
+
+.btn-sedan {
+  color: var(--clr-primary-400);
+}
+
+.btn-sedan:hover {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-primary-400);
+}
+
+.btn-suv {
+  color: var(--clr-primary-600);
+}
+
+.btn-suv:hover {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-primary-600);
+}
+
+.btn-luxury {
+  color: var(--clr-primary-900);
+}
+
+.btn-luxury:hover {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-primary-900);
+}
+/*
+@media (min-width: 60rem) {
+  .main {
+    flex-direction: row;
+  }
+} */
+
+@media (min-width: 900px) {
+  .main {
+    flex-direction: row;
+  }
+}
